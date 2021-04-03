@@ -1,0 +1,205 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .grid-container {
+            display: grid;
+            height: 100vh;
+            background-color: red;
+            /* grid-template-columns: 1fr 1fr 1fr 2fr; */
+            /* grid-template-columns: 200px 400px 200px 2fr; */
+            grid-template-columns: repeat(5, 200px);
+            /* grid-template-rows: repeat(2, 200px); */
+            grid-column-gap: 50px;
+            /* grid-row-gap: 10px; */
+            justify-items: center;
+            align-items: center;
+        }
+        .grid-element { 
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            background-color: white;
+            color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="head" 
+    style="
+    text-align: center; 
+    background-color: red;
+    color: white;">
+    Галерея
+    </div>
+    <div class="grid-container">
+       
+        <div class="grid-element">1</div>
+        <div class="grid-element">2</div>
+        <div class="grid-element">3</div>
+        <div class="grid-element">4</div>
+        <div class="grid-element">5</div>
+        <div class="grid-element">6</div>
+        <div class="grid-element">7</div>
+        <div class="grid-element">8</div>
+        <div class="grid-element">9</div>
+        <div class="grid-element">10</div>
+        <div class="grid-element">11</div>
+        <div class="grid-element">12</div>
+        <div class="grid-element">13</div>
+        <div class="grid-element">14</div>
+        <div class="grid-element">15</div>
+    
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGO</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-color: #960499;
+            color: azure;
+            display: flex;
+            padding: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: normal;
+            font-weight: bold;
+        }
+
+        .search {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-left: 650px;
+        }
+
+        .search>input {
+            border-radius: 5px;
+            width: 300px;
+            height: 25px;
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        .category {
+            position: static;
+            width: 234px;
+            margin-left: 35px;
+            margin-top: 30px;
+            font-size: 30px;
+        }
+
+        .pictures {
+            display: grid;
+            height: 100vh;
+            /* background-image: url(https://st3.depositphotos.com/12985790/16063/i/600/depositphotos_160634808-stock-photo-stylish-clothes-on-hangers.jpg);
+            background-size: cover;
+            width: 230px;
+            height: 230px; */
+            grid-template-columns: repeat(4, 300px);
+            justify-items: center;
+            align-items: center;
+
+        }
+
+        /* 
+        img {
+            width: 250px;
+            height: 250px;
+            border: 1px solid black;
+            border-radius: 10px;
+            color: 000000, 50%;
+        } */
+
+        ::placeholder {
+            color: white;
+        }
+
+        .content {
+            background: url(https://st3.depositphotos.com/12985790/16063/i/600/depositphotos_160634808-stock-photo-stylish-clothes-on-hangers.jpg);
+            width: 270px;
+            height: 230px;
+            color: white;
+            font-size: 40px;
+            border-radius: 10px;
+
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .backdrop {
+            width: 270px;
+            height: 230px;
+            background: black;
+            opacity: 0.5;
+            position: absolute;
+            border-radius: 10px;
+            
+        }
+        .title {
+            z-index: 2;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1>WILDBERRIES</h1>
+            <div class="search">
+                <input type="text" placeholder="Я ищу">
+            </div>
+        </div>
+    </header>
+    <div class="category">
+        <h2>Категории</h2>
+    </div>
+    <div class="pictures">
+        <div class="content">
+            <span class="title">C</span>
+            <div class="backdrop"></div>
+        </div>
+        <div class="content"><span class="title">А</span>
+            <div class="backdrop"></div></div>
+        <div class="content"><span class="title">Л</span>
+            <div class="backdrop"></div></div>
+        <div class="content"><span class="title">АМ</span>
+            <div class="backdrop"></div></div>
+        <div class="content"><span class="title">АЛ</span>
+            <div class="backdrop"></div></div>
+        <div class="content"><span class="title">ЕЙ</span>
+            <div class="backdrop"></div></div>
+        <div class="content"><span class="title">К</span>
+            <div class="backdrop"></div></div>
+        <div class="content"><span class="title">УМ</span>
+            <div class="backdrop"></div></div>
+
+    </div>
+</body>
+
+</html>
